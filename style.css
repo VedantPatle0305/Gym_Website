@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Luxurious+Roman&family=Open+Sans:wght@300&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@200&family=Roboto+Mono:wght@300;400&family=Roboto:wght@100;300;400;500;700;900&family=Secular+One&display=swap');
+
+/*UNIVERSAL PROPERTIES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*UNIVERSAL PROPERTIES END*/
+
+
+/*NAV BAR STYLES*/
+
+.list-container {
+    width: 70%;
+    text-transform: uppercase;
+    max-width: 500px;
+}
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-container li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+
+.list-container li:hover {
+    color: rgb(80, 71, 71);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.btn {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px 10px !important;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: red;
+    transition: .3s;
+}
+
+
+/* NAV BAR STYLES END*/
+
+
+/* TEXT CONTAINER STYLES  */
+
+.text-container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text-container h1 {
+    font-family: 'secular one', sans-serif;
+    font-size: 50px;
+    color: red !important;
+}
+
+.text-content {
+    max-width: 580px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.text-content p {
+    margin: 30px 0px;
+}
+
+.text-content button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.text-content button:hover {
+    background-color: red;
+}
+
+
+/* TEXT CONTAINER STYLES  END */
+
+
+/* Main content style */
+
+.main {
+    padding: 20px;
+}
+
+.main .our-story {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 80%;
+    margin: 90px auto;
+    flex-wrap: wrap;
+}
+
+.our-story img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: block;
+}
+
+.image {
+    margin: auto;
+}
+
+.our-story p {
+    margin-top: 70px;
+    max-width: 600px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.our-story-content {
+    font-size: 20px;
+    margin: auto;
+    display: block;
+}
+
+
+/* advantages style */
+
+.advantages {
+    margin: 90px 0px;
+}
+
+.advantages .advantages-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.advantages .advantages-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.advantages-card h3 {
+    color: red;
+}
+
+.advantages-card {
+    width: 250px;
+    background-color: white;
+    height: 350px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.advantages-card:hover {
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.158);
+}
+
+.advantages-card p {
+    font-size: 14px;
+}
+
+.image-container img {
+    width: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.advantages .text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+}
+
+
+/* advantages style end */
+
+
+/* Main content style end */
+
+
+/* footer part styles */
+
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 38px;
+}
+
+.social-icon i {
+    transition: all .1s ease-in;
+}
+
+.social-icon .icon1:hover {
+    transform: scale(1.2);
+    color: rgb(33, 33, 211);
+}
+
+.social-icon .icon2:hover {
+    transform: scale(1.2);
+    color: rgb(247, 54, 86);
+}
+
+.social-icon .icon3:hover {
+    color: rgb(0, 132, 255);
+    transform: scale(1.2);
+}
+
+.social-icon .icon4:hover {
+    transform: scale(1.2);
+    color: rgb(0, 38, 141);
+}
+
+.social-icon a {
+    color: white;
+}
+
+.footer-content {
+    min-width: 400px;
+}
+
+.footer-content p {
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* footer part styles end */
+
+.fas {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-times {
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+#open {
+    display: none;
+}
+
+
+/* navigation bar for mobile css and media quesries */
+
+@media screen and (max-width:600px) {
+    .fas {
+        display: block;
+    }
+    body {
+        position: relative !important;
+    }
+    .list-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        backdrop-filter: blur(40px);
+        height: 100vh;
+        width: 0%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: .3s width;
+    }
+    .list-container li {
+        display: block;
+        width: fit-content;
+        margin: 30px auto;
+    }
+    .menu-container {
+        width: fit-content;
+        display: block;
+    }
+    .fa-times {
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        font-size: 27px;
+    }
+    #close {
+        display: block;
+    }
+    #open {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1270px) {
+    .image {
+        width: 100%;
+    }
+    .image img {
+        display: block;
+        margin: auto;
+    }
+}
