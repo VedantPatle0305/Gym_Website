@@ -149,6 +149,11 @@ a {
 
 .image {
     margin: auto;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
 }
 
 .our-story p {
@@ -241,8 +246,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    font-size: 38px;
+    padding: 20px 40px;
+    font-size: 30px;
 }
 
 .social-icon i {
