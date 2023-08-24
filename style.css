@@ -147,15 +147,6 @@ a {
     display: block;
 }
 
-.image {
-    margin: auto;
-    overflow: hidden;
-}
-.image img{
-    width: 100%;
-    height: 100%;
-}
-
 .our-story p {
     margin-top: 70px;
     max-width: 600px;
@@ -165,11 +156,16 @@ a {
 
 .our-story-content {
     font-size: 20px;
+    width: 100%;
     margin: auto;
-    display: block;
+    display: flex;
+    overflow: hidden;
+    text-align: justify;
 }
-
-
+.our-story-content img{
+    width: 100%;
+    max-width: 400px;
+}
 /* advantages style */
 
 .advantages {
@@ -361,11 +357,7 @@ footer {
 }
 
 @media screen and (max-width:1270px) {
-    .image {
-        width: 100%;
-    }
-    .image img {
-        display: block;
-        margin: auto;
+    .our-story-content{
+        flex-direction: column;
     }
 }
